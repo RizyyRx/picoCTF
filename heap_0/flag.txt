@@ -1,0 +1,6 @@
+picoCTF{my_first_heap_overflow_0c473fe8}
+
+enter input greater that or equal to 32 to buffer overflow and tamper the safe var
+the diff between current addr and the safe var is 32 in hex. eq or more than 32 data will cause the remaining data
+to OF into the safe var and tamper it.
+if safe var is changed, you can print the flag.

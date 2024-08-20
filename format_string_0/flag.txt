@@ -1,0 +1,9 @@
+picoCTF{7h3_cu570m3r_15_n3v3r_SEGFAULT_dc0f36c4}
+
+first, we have to give input larger than 2*buffsize ie 2*32, but the options in the menu
+is not larger. Since the ip is printed directly with format strings, this specific item "Gr%114d_Cheese"
+has %114d format specifier which will create 114 garbage values. so the limit exceeds 64 if we select this item as choice1
+as we go to next one.
+
+here, if we crash the segmentation and we can get the flag. to do this, select "Cla%sic_Che%s%steak" this as our choice2
+the %s in there will look for string input to replace. since it cant find any strings input to replace, it will crash
