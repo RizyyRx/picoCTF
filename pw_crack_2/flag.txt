@@ -1,0 +1,4 @@
+picoCTF{tr45h_51ng1ng_9701e681}
+print this chr(0x34) + chr(0x65) + chr(0x63) + chr(0x39)
+chr will convert the unicode(similar to ascii, but with borader characters) to its corresponding character
+here the unicode is give in hex.

@@ -1,0 +1,3 @@
+picoCTF{ME74D47A_HIDD3N_d8c381fd}
+
+exiftool and u get base64 code of flag
